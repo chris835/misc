@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 
 namespace WaveOut
 {
-    internal unsafe class Program
+    internal unsafe class WaveOut
     {
         #region P/Invoke
 
