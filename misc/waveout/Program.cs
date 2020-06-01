@@ -9,7 +9,7 @@ namespace WaveOut
     {
         #region P/Invoke
 
-        public enum WaveFormatTag : ushort
+        private enum WaveFormatTag : ushort
         {
             Invalid = 0,
             Pcm = 1,
@@ -41,7 +41,7 @@ namespace WaveOut
         private delegate void WaveOutProc( IntPtr phwo, WaveOutMessage uMsg, IntPtr dwInstance, IntPtr dwParam1, IntPtr dwParam2 );
 
         [Flags]
-        public enum WaveOpenFlags : uint
+        private enum WaveOpenFlags : uint
         {
             CALLBACK_NULL = 0x00000000,
             CALLBACK_WINDOW = 0x00010000,
