@@ -159,9 +159,9 @@ namespace WaveOut
                     long pos = offset + i;
                     double time = pos / (double)fmt.nSamplesPerSec;
 
-                    buf.Data[i] = (short)( 5000 * Math.Sin( time * Math.PI * 1200 ) + // 1200 Hz
-                                           5000 * Math.Sin( time * Math.PI * 1210 ) + // 1210 Hz
-                                           4000 * Math.Sin( time * Math.PI * 210 ) ); // 210 Hz
+                    buf.Data[i] = (short)( 5000 * Math.Sin( time * 2.0 * Math.PI * 1200 ) + // 1200 Hz
+                                           5000 * Math.Sin( time * 2.0 * Math.PI * 1210 ) + // 1210 Hz
+                                           4000 * Math.Sin( time * 2.0 * Math.PI * 210 ) ); // 210 Hz
                 }
 
                 offset += buf.Length;
