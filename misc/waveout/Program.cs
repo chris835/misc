@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace WaveOut
 {
