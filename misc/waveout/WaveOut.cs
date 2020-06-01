@@ -121,7 +121,7 @@ namespace WaveOut
             // TODO: implement IDisposable and free the allocated memory
         }
 
-        private static BlockingCollection<Buffer> s_FreeBuffers = new BlockingCollection<Buffer>( new ConcurrentQueue<Buffer>() );
+        private static BlockingCollection<Buffer> s_FreeBuffers = new BlockingCollection<Buffer>( new ConcurrentQueue<Buffer>() ); // NOTE: this dude allocates a bit when used, uncool
         private static Queue<Buffer> s_PendingBuffers = new Queue<Buffer>();
         
         private static void Main( string[] args )
